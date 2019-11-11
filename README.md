@@ -31,6 +31,15 @@ A micro sd card.
 
 And either a USB stick or a USB hard drive.
 
+## Setup USB Drive or USB Stick
+1. Plug the hard drive or USB stick into your computer
+2. Open Disk Utility if you are using a mac computer or Windows Explorer if your are using a Windows Computer
+3. For Windows users right click on the drive and click format
+4. For Mac users select the drive then click erase
+5. When you get to the format/erase page format the drive to be ExFat then click Erase/Start
+6. Let it load until it says complete then make sure its formated in ExFat
+7. Eject the drive from your computer
+
 ## Setup Raspberry Pi
 1. Flash Rasbian Lite on to the micro sd card. [Download Latest Version Here.](https://downloads.raspberrypi.org/raspbian_lite_latest)
 2. Unzip the downloaded file.
@@ -47,8 +56,10 @@ and the psk to your networks password.
 9. Copy the file you just edited and paste it to the boot partition of your micro sd card
 10. Unplug the micro sd card from your computer and insert it in your pi.
 11. SSH to your pi. (I use termius on my mac to use SSH with my pi) 
+12. Plug the drive you formated in to your pi
 
 Skip the steps above if you already set up your raspberry pi with ssh and wifi.
+
 
 ## Running the Installer Script
 Install Raspi Drive by entering this into your ssh command line
