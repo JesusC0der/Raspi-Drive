@@ -1,5 +1,5 @@
 ![](https://i.ibb.co/WBKdLVj/68747470733a2f2f692e696d6775722e636f6d2f78654b443933702e706e67.png)
-                                                                                               verson 1.0
+                                                                                               version 1.0
 
 Raspi Drive makes your Raspberry Pi into a wireless NAS server
 
@@ -25,11 +25,11 @@ Raspi Drive makes your Raspberry Pi into a wireless NAS server
 ![](https://i.ibb.co/74G0d0d/Screen-Shot-2019-11-10-at-12-34-39-AM.png)
 
 ## Requirements
-A Raspberry Pi that has wifi support and a usb port.
+A Raspberry Pi that has wifi support and a USB port.
 
 A micro sd card.
 
-And either a usb stick or a usb hard drive.
+And either a USB stick or a USB hard drive.
 
 ## Setup Raspberry Pi
 1. Flash Rasbian Lite on to the micro sd card. [Download Latest Version Here.](https://downloads.raspberrypi.org/raspbian_lite_latest)
@@ -37,16 +37,16 @@ And either a usb stick or a usb hard drive.
 3. Flash 2019-09-26-raspbian-buster-lite.img using [Etcher.](https://www.balena.io/etcher/)
 4. remount the micro sd card (unplug it and replug it back into your computer)
 5. Open Terminal in mac or command prompt in windows
-6. Run the following command to enable SSH 
+6. Run the following command to enable SSH
 ```
 touch /Volumes/boot/ssh
 ```
-7. Next we need to setup wifi.  Download this file named [wpa_supplicant.conf.](https://drive.google.com/file/d/1ctRdIoTdO74fUpxSAeHl0eQM0E_b64jK/view?usp=sharing) 
-8. Now open up the file that you just downloaded and change the ssid to your network name
+7. Next, we need to set up wifi.  Download this file named [wpa_supplicant.conf.](https://drive.google.com/file/d/1ctRdIoTdO74fUpxSAeHl0eQM0E_b64jK/view?usp=sharing) 
+8. Now open up the file that you just downloaded and change the SSID to your network name 
 and the psk to your networks password.
 9. Copy the file you just edited and paste it to the boot partition of your micro sd card
-10. Unplug the micro sd card from your computer and instert it in your pi.
-11. SSH to your pi. (Personaly I use termius on my mac to use SSH with my pi) 
+10. Unplug the micro sd card from your computer and insert it in your pi.
+11. SSH to your pi. (I use termius on my mac to use SSH with my pi) 
 
 Skip the steps above if you already set up your raspberry pi with ssh and wifi.
 
@@ -60,7 +60,7 @@ After the installation is complete please reboot your pi with ```sudo reboot```
 
 
 ## Manual Installation
-If you would like to manualy install this then you can follow these instructions.
+If you would like to manually install this then you can follow these instructions.
 1. Update your packages with ```sudo apt-get update```
 2. Upgrade your system with ```sudo apt-get upgrade -y```
 3. Install exfat-fuse and exfat-utils with ```sudo apt-get install exfat-fuse exfat-utils```
@@ -76,7 +76,7 @@ If you would like to manualy install this then you can follow these instructions
 3. Run and follow the instructions for both of the installers.
 4. Make a folder named Drive on your desktop.
 5. In Terminal run the command ```sshfs pi@Your-IP-Address:/mnt/drive /Drive Folder``` (Replace Your IP Address with your IP Address and /Drive Folder with the path to the folder you created in step 4 :)
-6. Put in your password for the pi (The defualt is ```raspberry```)
+6. Put in your password for the pi (The default is ```raspberry```)
 7. You should see a drive on the desktop named OSXFUSE Volume 0 (sshfs) if you see that drive it means it worked!
 8. All Done!
 
@@ -92,7 +92,7 @@ If you would like to manualy install this then you can follow these instructions
 4. Open the app up and then click on the Drives tab and then the New button
 5. On the Edit Drive dialog input a drive name (It can be anything) and SFTP server information (The default username and password is pi and raspberry). Click Test SSH Connection to verify the connection to the SFTP server, then press OK to save the new drive configuration.
 7. Press Start on the main window to connect to the drive.
-8. You should now be able to accsess your drive from file explorer
+8. You should now be able to access your drive from file explorer
 9. All Done!
 
 ![](https://i.ibb.co/6rJ9WmW/sftpdrive-new-drive.png)
