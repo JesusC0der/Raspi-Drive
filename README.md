@@ -63,11 +63,12 @@ Skip the steps above if you already set up your raspberry pi with ssh and wifi.
 
 
 ## Running the Installer Script
-Install Raspi Drive by entering this into your ssh command line
+1. Install Raspi Drive by entering this into your ssh command line
 ```
 wget -q https://git.io/JewLJ -O /tmp/raspi-drive && bash /tmp/raspi-drive
 ```
-After the installation is complete please reboot your pi with ```sudo reboot```
+2. Mount your drive by entering this ```sudo mount /dev/sda2 /mnt/drive```
+3. reboot ```sudo reboot```
 **Note:** This is the fastest way to get Raspi Drive on your Raspberry Pi.
 
 
@@ -75,7 +76,9 @@ After the installation is complete please reboot your pi with ```sudo reboot```
 If you would like to manually install this then you can follow these instructions.
 1. Update your packages with ```sudo apt-get update```
 2. Upgrade your system with ```sudo apt-get upgrade -y```
-3. Install exfat-fuse and exfat-utils with ```sudo apt-get install exfat-fuse exfat-utils```
+3. Install the software that you need ```sudo apt-get install exfat-fuse exfat-utils perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python```
+4. Download webmin with ```wget https://prdownloads.sourceforge.net/webadmin/webmin_1.930_all.deb```
+5. Then install webmin with ```sudo dpkg --install webmin_1.930_all.deb```
 4. Create the hard drive mount directory with ```sudo mkdir /mnt/drive```
 5. Mount your hard drive to the mount directory with ```sudo mount /dev/sda2 /mnt/drive```
 6. Reboot your pi with ```sudo reboot```
