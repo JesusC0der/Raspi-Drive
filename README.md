@@ -69,7 +69,10 @@ wget -q https://git.io/JewLJ -O /tmp/raspi-drive && bash /tmp/raspi-drive
 ```
 2. Mount your drive by entering this ```sudo mount /dev/sda2 /mnt/drive```
 3. reboot ```sudo reboot```
+
 **Note:** This is the fastest way to get Raspi Drive on your Raspberry Pi.
+
+**Also Note:** If you get an error when mounting the drive about there not being a directory at /dev/sda2 then run ```sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL```and look under sda for the sda partition that is bigger in size and copy it. (example: sda2) then in step 2 replace /dev/sda2 with the sda partition that you copied
 
 
 ## Manual Installation
