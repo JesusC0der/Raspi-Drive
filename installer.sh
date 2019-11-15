@@ -27,13 +27,17 @@
     sudo apt-get upgrade -y;
 
     echo INSTALLING REQUIRED PACKAGES
-    sudo apt-get install exfat-fuse exfat-utils
+    sudo apt-get install exfat-fuse exfat-utils perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
 
   echo CREATING MOUNT DIRECTORY
   sudo mkdir /mnt/drive
 
    echo MOUNTING DRIVE
    sudo mount /dev/sda2 /mnt/drive
+   
+   echo INSTALLING WEBMIN
+   wget https://prdownloads.sourceforge.net/webadmin/webmin_1.930_all.deb
+   sudo dpkg --install webmin_1.930_all.deb
 
   echo !!!!FINISHED!!!!
 
