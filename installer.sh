@@ -31,9 +31,6 @@
 
   echo CREATING MOUNT DIRECTORY
   sudo mkdir /mnt/drive
-
-   echo MOUNTING DRIVE
-   sudo mount /dev/sda2 /mnt/drive
    
    echo INSTALLING WEBMIN
    wget https://prdownloads.sourceforge.net/webadmin/webmin_1.930_all.deb
