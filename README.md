@@ -96,8 +96,9 @@ If you would like to manually install this then you can follow these instruction
 5. In Terminal run the command ```sshfs pi@Your-IP-Address:/mnt/drive /Drive Folder``` (Replace Your IP Address with your IP Address and /Drive Folder with the path to the folder you created in step 4 :)
 6. Put in your password for the pi (The default is ```raspberry```)
 7. You should see a drive on the desktop named OSXFUSE Volume 0 (sshfs) if you see that drive it means it worked!
-8. You can accsess the Web Interface by going to https://your-ip-address:10000/ replacing your-ip-address with the Raspberry Pi's IP Address.
+8. You can accsess the Web Interface by going to https://your-ip-address:10000 replacing your-ip-address with the Raspberry Pi's IP Address (example:https://192.168.5.73:10000)
 9. All Done!
+
 **Note:** You will probably see a warning message in your browser that says something like (Your connection is not private) ignore this message.
 
 ![](https://i.ibb.co/S78KRm5/Screen-Shot-2019-11-10-at-8-47-54-PM.png)
@@ -113,8 +114,9 @@ If you would like to manually install this then you can follow these instruction
 5. On the Edit Drive dialog input a drive name (It can be anything) and SFTP server information (The default username and password is pi and raspberry). Click Test SSH Connection to verify the connection to the SFTP server, then press OK to save the new drive configuration.
 7. Press Start on the main window to connect to the drive.
 8. You should now be able to access your drive from file explorer
-9. You can accsess the Web Interface by going to https://your-ip-address:10000/ replacing your-ip-address with the Raspberry Pi's IP Address.
+9. You can accsess the Web Interface by going to https://your-ip-address:10000 replacing your-ip-address with the Raspberry Pi's IP Address (example:https://192.168.5.73:10000)
 10. All Done!
+
 **Note:** You will probably see a warning message in your browser that says something like (Your connection is not private) ignore this message.
 
 ![](https://i.ibb.co/6rJ9WmW/sftpdrive-new-drive.png)
