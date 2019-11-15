@@ -27,7 +27,7 @@
     sudo apt-get upgrade -y;
 
     echo INSTALLING REQUIRED PACKAGES
-    sudo apt-get install exfat-fuse exfat-utils perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
+    sudo apt-get install -y exfat-fuse exfat-utils perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
 
   echo CREATING MOUNT DIRECTORY
   sudo mkdir /mnt/drive
