@@ -9,6 +9,7 @@ If you would like to submit a bug report or feature request then follow these in
 4. When you are all done click the Submit new issue button
 
 **Note:** Please be patient and I will try to fix the bug as soon as I can.
+**Also Note:** Please Do not use any bad language when writing an issue or making a code contribution.
 
 # Making a code contribution
 If you have made a fix for a bug or added a new feature and want to contribute to the project then follow these instructions
