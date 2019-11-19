@@ -123,3 +123,5 @@ If you would like to manually install this then you can follow these instruction
 ![](https://i.ibb.co/tsgydrK/sftpdrive-new-drive-details.png)
 ![](https://i.ibb.co/fCvcdNY/sftpdrive-new-drive-start.png)
 ![](https://i.ibb.co/kDy5fKm/sftpdrive-new-drive-explorer.png)
+## Contributing
+If you would like to report a bug or make a code contribution please view the ![CONTRIBUTING.MD File.](https://github.com/JesusCoder-Coding-For-Jesus/Raspi-Drive/blob/master/CONTRIBUTING.md)
