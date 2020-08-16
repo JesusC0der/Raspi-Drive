@@ -108,23 +108,17 @@ If you would like to manually install this then you can follow these instruction
 
 ## Connect to Raspi Drive with a Windows Computer
 
-**Credits go to NSoftware for Windows drive mount instructions**
-
 1. Find out what your Raspberry Pi's IP Address is with ```hostname -I``` (The real IP Address is the first one that it shows)
 2. Install [SFTP Drive from NSoftware](https://s3.amazonaws.com/nsoftware/builds%2Ffree%2FNDX2-A%2Fsetup.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYMML7DAHMGYTX3VA%2F20191111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191111T013336Z&X-Amz-Expires=172800&X-Amz-SignedHeaders=host&X-Amz-Signature=d981cc9e96b32c0b73aec570f4229ef8e5b71f8151f0e6ecd0d862f5f5b8d356&response-content-disposition=%3B%20filename%3DSFTPDriveV2.exe)
 3. Follow the instructions to install it.
 4. Open the app up and then click on the Drives tab and then the New button
-5. On the Edit Drive dialog input a drive name (It can be anything) and SFTP server information (The default username and password is pi and raspberry). Click Test SSH Connection to verify the connection to the SFTP server, then press OK to save the new drive configuration.
-7. Press Start on the main window to connect to the drive.
-8. You should now be able to access your drive from file explorer
-9. You can accsess the Web Interface by going to https://your-ip-address:10000 replacing your-ip-address with the Raspberry Pi's IP Address (example:https://192.168.5.73:10000)
-10. All Done!
+5. Once the Edit Drive dialog opens input a drive name (It can be anything) and then put in the SFTP server information (The default username and password is pi and raspberry). Then click OK.
+6. On the main window click start to start the connection to your Raspi Drive.
+7. If everything went smoothly then it should be accessible in file explorer.
+8. You can accsess the Web Interface by going to https://your-ip-address:10000 replacing your-ip-address with the Raspberry Pi's IP Address (example:https://192.168.5.73:10000)
+9. All Done!
 
 **Note:** You will probably see a warning message in your browser that says something like (Your connection is not private) ignore this message.
 
-![](https://i.ibb.co/6rJ9WmW/sftpdrive-new-drive.png)
-![](https://i.ibb.co/tsgydrK/sftpdrive-new-drive-details.png)
-![](https://i.ibb.co/fCvcdNY/sftpdrive-new-drive-start.png)
-![](https://i.ibb.co/kDy5fKm/sftpdrive-new-drive-explorer.png)
 ## Contributing
 If you would like to report a bug or make a code contribution please view the ![CONTRIBUTING.MD File.](https://github.com/JesusCoder-Coding-For-Jesus/Raspi-Drive/blob/master/CONTRIBUTING.md)
