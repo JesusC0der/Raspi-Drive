@@ -112,7 +112,7 @@ If you would like to manually install this then you can follow these instruction
 2. Install [SFTP Drive from NSoftware](https://s3.amazonaws.com/nsoftware/builds%2Ffree%2FNDX2-A%2Fsetup.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYMML7DAHMGYTX3VA%2F20191111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191111T013336Z&X-Amz-Expires=172800&X-Amz-SignedHeaders=host&X-Amz-Signature=d981cc9e96b32c0b73aec570f4229ef8e5b71f8151f0e6ecd0d862f5f5b8d356&response-content-disposition=%3B%20filename%3DSFTPDriveV2.exe)
 3. Follow the instructions to install it.
 4. Open the app up and then click on the Drives tab and then the New button
-5. Once the Edit Drive dialog opens input a drive name (It can be anything) and then put in the SFTP server information (The default username and password is pi and raspberry). Then click OK.
+5. Once the Edit Drive dialog opens, input a drive name (It can be anything) and then put in the SFTP server information (The default username and password is pi and raspberry). Then click OK.
 6. On the main window click start to start the connection to your Raspi Drive.
 7. If everything went smoothly then it should be accessible in file explorer.
 8. You can accsess the Web Interface by going to https://your-ip-address:10000 replacing your-ip-address with the Raspberry Pi's IP Address (example:https://192.168.5.73:10000)
