@@ -117,6 +117,7 @@ If you would like to manually install this then you can follow these instruction
 7. If everything went smoothly then it should be accessible in file explorer.
 8. You can accsess the Web Interface by going to https://your-ip-address:10000 replacing your-ip-address with the Raspberry Pi's IP Address (example:https://192.168.5.73:10000)
 9. All Done!
+
 **For more in depth instructions visit this [website](https://www.nsoftware.com/kb/articles/sftpdrive.rst)**
 **Note:** You will probably see a warning message in your browser that says something like (Your connection is not private) ignore this message.
 
