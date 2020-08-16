@@ -107,7 +107,9 @@ If you would like to manually install this then you can follow these instruction
 ![](https://i.ibb.co/gFXzQmT/Screen-Shot-2019-11-10-at-8-48-56-PM.png)
 
 ## Connect to Raspi Drive with a Windows Computer
-# Credits go to NSoftware for Windows drive mount instructions
+
+**Credits go to NSoftware for Windows drive mount instructions**
+
 1. Find out what your Raspberry Pi's IP Address is with ```hostname -I``` (The real IP Address is the first one that it shows)
 2. Install [SFTP Drive from NSoftware](https://s3.amazonaws.com/nsoftware/builds%2Ffree%2FNDX2-A%2Fsetup.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYMML7DAHMGYTX3VA%2F20191111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191111T013336Z&X-Amz-Expires=172800&X-Amz-SignedHeaders=host&X-Amz-Signature=d981cc9e96b32c0b73aec570f4229ef8e5b71f8151f0e6ecd0d862f5f5b8d356&response-content-disposition=%3B%20filename%3DSFTPDriveV2.exe)
 3. Follow the instructions to install it.
