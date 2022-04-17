@@ -110,7 +110,7 @@ If you would like to manually install this then you can follow these instruction
 7. If everything went smoothly then it should be accessible in File Explorer.
 8. You should now be able to accsess the Web Interface by going to https://your-ip-address:10000 replacing your-ip-address with the Raspberry Pi's IP Address (for example: https://192.168.5.73:10000)
 9. All Done!
-**For more in depth instructions on how to setup a sftp connection on windows visit this [website](https://cdn.nsoftware.com/help/ND3/app/pg_runningdrive.htm)**
+**For more in depth instructions on how to setup a sftp connection on windows visit this [website](https://cdn.nsoftware.com/help/ND3/app/pg_runningdrive.htm).**
 
 **Note:** You will probably see a warning message in your browser that says something like (Your connection is not private) ignore this message.
 
