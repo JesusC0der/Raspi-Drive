@@ -18,7 +18,7 @@
     echo -e "01010101   01     01   0101010         01        01010101"
     echo #space
     echo -e "${green}"
-    read -p "Install RasPi Drive press Y for yes or any other key to stop" -n 1 -r
+    read -p "Installing RasPi Drive.  Press Y to continue or any other key to stop" -n 1 -r
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
     echo UPDATING AND UPGRADING
@@ -36,7 +36,7 @@
    wget https://prdownloads.sourceforge.net/webadmin/webmin_1.930_all.deb
    sudo dpkg --install webmin_1.930_all.deb
 
-  echo !!!!FINISHED!!!!
+  echo Finished
 
    else
    echo #space
