@@ -1,9 +1,6 @@
-![](https://i.ibb.co/WBKdLVj/68747470733a2f2f692e696d6775722e636f6d2f78654b443933702e706e67.png)
-                                                                                               version 1.1
-
 Raspi Drive makes your Raspberry Pi into a wireless NAS server.
 
-
+                                                         version 1.1
 ## Contents
  - [Screenshots](#screenshots)
  
