@@ -1,7 +1,7 @@
 ![](https://i.ibb.co/WBKdLVj/68747470733a2f2f692e696d6775722e636f6d2f78654b443933702e706e67.png)
                                                                                                version 1.1
 
-Raspi Drive makes your Raspberry Pi into a wireless NAS server
+Raspi Drive makes your Raspberry Pi into a wireless NAS server.
 
 
 ## Contents
@@ -26,11 +26,12 @@ Raspi Drive makes your Raspberry Pi into a wireless NAS server
 ![](https://i.ibb.co/sVRYzjh/Screen-Shot-2019-11-14-at-10-19-08-PM.png)
 
 ## Requirements
-A Raspberry Pi that has wifi support and a USB port.
 
-A micro sd card.
+A Raspberry Pi that has wireless support (could be any version as long as you have a wifi adapter).
 
-And either a USB stick or a USB hard drive.
+A micro sd card (class 10 recomended).
+
+Either a USB stick or a USB hard drive.
 
 ## Setup USB Drive or USB Stick
 1. Plug the hard drive or USB stick into your computer
@@ -90,7 +91,7 @@ If you would like to manually install this then you can follow these instruction
 
 ## Connect to Raspi Drive with a Mac
 1. Find out what your Raspberry Pi's IP Address is with ```hostname -I``` (The real IP Address is the first one that it shows)
-2. Download [Fuse](https://github.com/osxfuse/osxfuse/releases/download/osxfuse-3.10.3/osxfuse-3.10.3.dmg) and [SSHFS](https://github.com/osxfuse/sshfs/releases/download/osxfuse-sshfs-2.5.0/sshfs-2.5.0.pkg) on your mac.
+2. Download [Fuse](https://github.com/osxfuse/osxfuse/releases/download/) and [SSHFS](https://github.com/osxfuse/sshfs/releases/download/) on your mac.
 3. Run and follow the instructions for both of the installers.
 4. Make a folder named Drive on your desktop.
 5. In Terminal run the command ```sshfs pi@Your-IP-Address:/mnt/drive /Drive Folder``` (Replace Your IP Address with your IP Address and /Drive Folder with the path to the folder you created in step 4 :)
@@ -107,20 +108,19 @@ If you would like to manually install this then you can follow these instruction
 ![](https://i.ibb.co/gFXzQmT/Screen-Shot-2019-11-10-at-8-48-56-PM.png)
 
 ## Connect to Raspi Drive with a Windows Computer
-
+**Credits go to NSoftware for instructions**
 1. Find out what your Raspberry Pi's IP Address is with ```hostname -I``` (The real IP Address is the first one that it shows)
-2. Install [SFTP Drive from NSoftware](https://s3.amazonaws.com/nsoftware/builds%2Ffree%2FNDX2-A%2Fsetup.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYMML7DAHMGYTX3VA%2F20191111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191111T013336Z&X-Amz-Expires=172800&X-Amz-SignedHeaders=host&X-Amz-Signature=d981cc9e96b32c0b73aec570f4229ef8e5b71f8151f0e6ecd0d862f5f5b8d356&response-content-disposition=%3B%20filename%3DSFTPDriveV2.exe)
-3. Follow the instructions to install it.
-4. Open the app up and then click on the Drives tab and then the New button
+2. Install [SFTP Drive from NSoftware](https://www.nsoftware.com/sftp/drive/)
+3. Follow the in-app instructions to install the program.
+4. Open the app and click on the Drives tab and then the New button.
 5. Once the Edit Drive dialog opens, input a drive name (It can be anything) and then put in the SFTP server information (The default username and password is pi and raspberry). Then click OK.
 6. On the main window click start to start the connection to your Raspi Drive.
 7. If everything went smoothly then it should be accessible in file explorer.
 8. You can accsess the Web Interface by going to https://your-ip-address:10000 replacing your-ip-address with the Raspberry Pi's IP Address (example:https://192.168.5.73:10000)
 9. All Done!
-
-**For more in depth instructions on how to setup a sftp connection on windows visit this [website](https://www.nsoftware.com/kb/articles/sftpdrive.rst)**
+**For more in depth instructions on how to setup a sftp connection on windows visit this [website](https://cdn.nsoftware.com/help/ND3/app/pg_runningdrive.htm)**
 
 **Note:** You will probably see a warning message in your browser that says something like (Your connection is not private) ignore this message.
 
 ## Contributing
-If you would like to report a bug or make a code contribution please view the ![CONTRIBUTING.MD File.](https://github.com/JesusCoder-Coding-For-Jesus/Raspi-Drive/blob/master/CONTRIBUTING.md)
+If you would like to report a bug or make a code contribution please view the [CONTRIBUTING.MD File.](https://github.com/JesusCoder-Coding-For-Jesus/Raspi-Drive/blob/master/CONTRIBUTING.md)
