@@ -43,7 +43,7 @@ Either a USB stick or a USB hard drive.
 7. Eject the drive from your computer.
 
 ## Setup Raspberry Pi
-1. Download Raspberry Pi OS Lite. [Grab the latest version from here.](https://downloads.raspberrypi.org/)
+1. Download Raspberry Pi OS Lite. [Grab the latest version from here.](https://www.raspberrypi.com/software/operating-systems/)
 2. Unzip the downloaded file.
 3. Flash the unzipped image using [Etcher.](https://www.balena.io/etcher/)
 4. Remount the micro sd card (unplug and replug micro sd card from computer).
