@@ -18,9 +18,6 @@ Raspi Drive makes your Raspberry Pi into a wireless NAS server.
  - [Connect to Raspi Drive with a Windows Computer](#connect-to-raspi-drive-with-a-windows-computer)
 
 ## Screenshots
-![](https://i.ibb.co/3msg6wz/Screen-Shot-2019-11-10-at-12-28-10-AM.png)
-![](https://i.ibb.co/N7g33XW/Screen-Shot-2019-11-10-at-12-31-24-AM.png)
-![](https://i.ibb.co/74G0d0d/Screen-Shot-2019-11-10-at-12-34-39-AM.png)
 ![](https://i.ibb.co/sVRYzjh/Screen-Shot-2019-11-14-at-10-19-08-PM.png)
 
 ## Requirements
