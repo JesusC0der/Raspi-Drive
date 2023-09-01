@@ -35,6 +35,7 @@
    echo INSTALLING WEBMIN
    wget https://prdownloads.sourceforge.net/webadmin/webmin_1.930_all.deb
    sudo dpkg --install webmin_1.930_all.deb
+   sudo apt --fix-broken install -y
 
   echo Finished
 
