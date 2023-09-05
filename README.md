@@ -19,6 +19,7 @@ A semi-automated project to convert a Raspberry Pi into a NAS server (DIY Cloud 
 
 ## Screenshots
 ![](https://i.ibb.co/sVRYzjh/Screen-Shot-2019-11-14-at-10-19-08-PM.png)
+![](https://i.ibb.co/fdtLm0w/Screenshot-2023-09-05-at-5-40-52-PM.png)
 
 ## Requirements
 
@@ -37,23 +38,6 @@ Either a USB stick or a USB hard drive.
 6. Let it load until it says complete then make sure its formated in ExFat.
 7. Eject the drive from your computer.
 
-## Setup Raspberry Pi
-
-1. Download Raspberry Pi OS Lite. [Grab the latest version from here.](https://www.raspberrypi.com/software/operating-systems/)
-2. Unzip the downloaded file.
-3. Flash the unzipped image using [Etcher.](https://www.balena.io/etcher/)
-4. Remount the micro sd card (unplug and replug micro sd card from computer).
-5. Open Terminal or Command Prompt and run the following command (enables ssh on the pi):
-```
-touch /Volumes/boot/ssh
-```
-6. Next, we need to set up wifi.  Download this file named [wpa_supplicant.conf.](https://drive.google.com/file/d/1ctRdIoTdO74fUpxSAeHl0eQM0E_b64jK/view?usp=sharing) 
-7. Now open up the file you downloaded and change the SSID to your network's name and the psk to your network's password.
-8. Copy the file you just edited and paste it to the boot partition of your micro sd card.
-9. Unplug the micro sd card from your computer and insert it in your pi.
-10. SSH to your pi (more information on how to do so [here](https://itsfoss.com/ssh-into-raspberry/)).
-11. Plug the drive you formated in to your pi.
-
 ## Newer Method – Version 2.0 Installation Image
 To reduce the ammount of work involved with implementing this project, I have created an installation image that automates the process of installing this to a Raspberry Pi.
 
@@ -63,28 +47,42 @@ To reduce the ammount of work involved with implementing this project, I have cr
 4. Power on your Raspberry Pi, wait 30 secconds to a minute, and then connect to the wifi network named "raspidrive-config."
 5. Visit the setup website at [[192.168.88.1:8888](http://192.168.88.1:8888/), select your WiFi network, input the wifi's password, and then click "submit."
 6. After clicking "submit," wait for the connection to the configuation network to drop; this signals the Pi has succesfully connected to WiFi (if the config network reappears, repeat steps 3-5.
-7. **You're done! Proceed with conencting the Pi to your computer using the [below steps](#connect-to-raspi-drive-with-a-mac).**
+**You're done! Proceed with conencting the Pi to your computer using the [below steps](#connect-to-raspi-drive-with-a-mac).**
+**Note:** This is the fastest way to get Raspi Drive on your Raspberry Pi.
 
-## Older method – Running the Installer Script
+## Older method – Setting up with Installer Script
 
-1. Install Raspi Drive by running the following command on your pi:
+1. Download Raspberry Pi OS Lite. [Grab the latest version from here.](https://www.raspberrypi.com/software/operating-systems/)
+2. Unzip the downloaded file.
+3. Flash the unzipped image using [Etcher.](https://www.balena.io/etcher/)
+4. Remount the micro sd card (unplug and replug micro sd card from computer).
+5. Open Terminal or Command Prompt and run the following command (enables ssh on the pi):
+```
+touch /Volumes/boot/ssh
+```
+6. Next, set up wifi.  Download this file named [wpa_supplicant.conf.](https://drive.google.com/file/d/1ctRdIoTdO74fUpxSAeHl0eQM0E_b64jK/view?usp=sharing) 
+7. Now open up the file you downloaded and change the SSID to your network's name and the psk to your network's password.
+8. Copy the file you just edited and paste it to the boot partition of your micro sd card.
+9. Unplug the micro sd card from your computer and insert it in your pi.
+10. SSH to your pi (more information on how to do so [here](https://itsfoss.com/ssh-into-raspberry/)).
+11. Plug the drive you formated in to your pi.
+12. Initiate the Raspi Drive installation script by running the following command on your Pi:
 ```
 wget -q https://git.io/JewLJ -O /tmp/raspi-drive && bash /tmp/raspi-drive
 ```
-2. Mount your external drive by entering: ```sudo mount /dev/sda2 /mnt/drive```
-3. Reboot your pi with ```sudo reboot```
+13. Mount your external drive by entering: ```sudo mount /dev/sda2 /mnt/drive```
+14. Reboot your pi with ```sudo reboot```
 
-**Note:** This is the fastest way to get Raspi Drive on your Raspberry Pi.
-
-**Also Note:** If you get an error when mounting the drive about there not being a directory at /dev/sda2 then run ```sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL```and look under sda for the sda partition that is bigger in size and copy it. (example: sda2) then in step 2 replace /dev/sda2 with the sda partition that you copied.
+**Note:** If you get an error when mounting the drive about there not being a directory at /dev/sda2 then run ```sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL```and look under sda for the sda partition that is bigger in size and copy it. (example: sda2) then in step 2 replace /dev/sda2 with the sda partition that you copied.
 
 
 ## Manual Installation
 If you would like to manually install this then you can follow these instructions.
-1. Update your packages with ```sudo apt update```
-2. Upgrade your system with ```sudo apt upgrade -y```
-3. Install the following dependencies:  ```sudo apt install exfat-fuse exfat-utils perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python```
-4. Download and install Webmin with: ```wget https://prdownloads.sourceforge.net/webadmin/webmin_1.930_all.deb && sudo dpkg --install webmin_1.930_all.deb```
+1. Run steps 1-10 above.
+2. Update your packages with ```sudo apt update```
+3. Upgrade your system with ```sudo apt upgrade -y```
+4. Install the following dependencies:  ```sudo apt install exfat-fuse exfat-utils perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python```
+5. Download and install Webmin with: ```wget https://prdownloads.sourceforge.net/webadmin/webmin_1.930_all.deb && sudo dpkg --install webmin_1.930_all.deb```
 4. Create the external hard drive's mount directory with ```sudo mkdir /mnt/drive```
 5. Mount your hard drive to the mount directory with ```sudo mount /dev/sda2 /mnt/drive```
 6. Reboot your pi with ```sudo reboot```
