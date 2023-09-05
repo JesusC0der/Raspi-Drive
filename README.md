@@ -45,7 +45,7 @@ To reduce the ammount of work involved with implementing this project, I have cr
 2. Decompress the image and flash it to a micro SD card (with at least 8GB of available space) with your favorite flashing utility.
 3. Connect your drive through USB.
 4. Power on your Raspberry Pi, wait 30 secconds to a minute, and then connect to the wifi network named "raspidrive-config."
-5. Visit the setup website at [[192.168.88.1:8888](http://192.168.88.1:8888/), select your WiFi network, input the wifi's password, and then click "submit."
+5. Visit the setup website at [192.168.88.1:8888](http://192.168.88.1:8888/), select your WiFi network, input the wifi's password, and then click "submit."
 6. After clicking "submit," wait for the connection to the configuation network to drop; this signals the Pi has succesfully connected to WiFi (if the config network reappears, repeat steps 3-5.
 **You're done! Proceed with conencting the Pi to your computer using the [below steps](#connect-to-raspi-drive-with-a-mac).**
 **Note:** This is the fastest way to get Raspi Drive on your Raspberry Pi.
