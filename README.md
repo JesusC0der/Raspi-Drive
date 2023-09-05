@@ -1,6 +1,6 @@
-                                            version 1.3
+Raspi Drive – Version 2.0
 
-Raspi Drive makes your Raspberry Pi into a wireless NAS server.
+A semi-automated project to convert a Raspberry Pi into a NAS server (DIY Cloud Storage Solution).
 
 ## Contents
  - [Screenshots](#screenshots)
@@ -38,6 +38,7 @@ Either a USB stick or a USB hard drive.
 7. Eject the drive from your computer.
 
 ## Setup Raspberry Pi
+
 1. Download Raspberry Pi OS Lite. [Grab the latest version from here.](https://www.raspberrypi.com/software/operating-systems/)
 2. Unzip the downloaded file.
 3. Flash the unzipped image using [Etcher.](https://www.balena.io/etcher/)
@@ -53,7 +54,19 @@ touch /Volumes/boot/ssh
 10. SSH to your pi (more information on how to do so [here](https://itsfoss.com/ssh-into-raspberry/)).
 11. Plug the drive you formated in to your pi.
 
-## Running the Installer Script
+## Newer Method – Version 2.0 Installation Image
+To reduce the ammount of work involved with implementing this project, I have created an installation image that automates the process of installing this to a Raspberry Pi.
+
+1. Download the latest release of Raspi Drive [here](https://github.com/JesusC0der/Raspi-Drive/releases/).
+2. Decompress the image and flash it to a micro SD card (with at least 8GB of available space) with your favorite flashing utility.
+3. Connect your drive through USB.
+4. Power on your Raspberry Pi, wait 30 secconds to a minute, and then connect to the wifi network named "raspidrive-config."
+5. Visit the setup website at [[192.168.88.1:8888](http://192.168.88.1:8888/), select your WiFi network, input the wifi's password, and then click "submit."
+6. After clicking "submit," wait for the connection to the configuation network to drop; this signals the Pi has succesfully connected to WiFi (if the config network reappears, repeat steps 3-5.
+7. **You're done! Proceed with conencting the Pi to your computer using the [below steps](#connect-to-raspi-drive-with-a-mac).**
+
+## Older method – Running the Installer Script
+
 1. Install Raspi Drive by running the following command on your pi:
 ```
 wget -q https://git.io/JewLJ -O /tmp/raspi-drive && bash /tmp/raspi-drive
